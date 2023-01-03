@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Payroll Form</title>
     <link rel="stylesheet" href="new_payroll_form.css">
+    <title>Employee Payroll Form</title>
+    <script defer src="EmployeePayrollData.js"></script>
+    <script defer src="new_payroll_form.js"></script>
 </head>
 
 <body>
@@ -157,26 +159,18 @@
             <!--Ability to add Notes as well as cancel, reset and submit button so as to do some action on form entry-->
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
-                <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
+                <textarea id="notes" class="input" name="notes" placeholder="" style="height:100px"></textarea>
             </div>
             <div class="buttonParent">
                 <a href="index.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" onclick="openPopup()"
-                        id="submitButton">Submit</button>
-                    <div class="popup" id="popup">
-                        <img src="D:/Testing/tick.png">
-                        <h2>Thank You!</h2>
-                        <p>Your details has been submitted successfully.</p>
-                        <button type="button" onclick="closePopup()">OK</button>
-                    </div>
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>
         </form>
     </div>
-    <script src="EmployeePayrollData.js"></script>
-    <script src="new_payroll_form.js"></script>
+
 </body>
 
 </html>
