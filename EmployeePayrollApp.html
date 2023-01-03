@@ -20,7 +20,7 @@
         </div>
     </header>
     <!--UC2 Ability to create a Form Header and the Input Text Element for Name-->
-    <div class="form-content">
+    <div id="formId" class="form-content">
         <form class="form" action="#" onsubmit="save();return false">
             <div class="form-head">
                 <h2>Employee Payroll Form</h2>
@@ -49,6 +49,14 @@
                     <label>
                         <input type="radio" id="profile4" name="profile" value="D:/Testing/ph2.png" required>
                         <img class="profile" id='image4' src="D:/Testing/ph2.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile5" name="profile" value="D:/Testing/ph5.png" required>
+                        <img class="profile" id='image4' src="D:/Testing/ph5.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile6" name="profile" value="D:/Testing/ph6.png" required>
+                        <img class="profile" id='image4' src="D:/Testing/ph6.png">
                     </label>
                 </div>
             </div>
@@ -151,7 +159,7 @@
                 <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
             </div>
             <div class="buttonParent">
-                <a href="index.html" class="resetButton button cancelButton">Cancel</a>
+                <a href="EmployeePayrollApp.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
