@@ -159,9 +159,16 @@
                 <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
             </div>
             <div class="buttonParent">
-                <a href="EmployeePayrollApp.html" class="resetButton button cancelButton">Cancel</a>
+                <a href="index.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="submit" class="button submitButton" onclick="openPopup()"
+                        id="submitButton">Submit</button>
+                    <div class="popup" id="popup">
+                        <img src="profilePic/tick.png">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been submitted successfully.</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
                     <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>
